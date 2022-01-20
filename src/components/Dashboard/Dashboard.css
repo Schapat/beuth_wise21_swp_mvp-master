@@ -1,0 +1,53 @@
+
+		h1 {
+			color: #1b1161;
+			text-align: center;
+		}
+
+			main#wrapper {
+				width: 1280px;
+				margin-left: auto;
+				margin-right: auto;
+				color: white;
+			}
+				
+			.elements {
+				width: 	596px;
+				height: 300px;
+				float: left;
+				border: 2px solid black;
+				margin: 20px;
+				/*background-color: #281d39; */
+				overflow: scroll;
+			}
+			
+			footer{
+			position: absolute;
+    		bottom: 0;
+			}
+
+@media only screen and (max-width: 700px) {
+	
+	/*body {
+		overflow-x: hidden;	
+	} */
+	
+	div#calendar {
+		float:none;	
+	}
+	
+	div#plot {
+		float: both;
+		
+	}
+	
+	div#character {
+		clear: both;
+		float: left;
+		
+	}
+	
+	div#news {
+		clear: left;		
+	} 
+}

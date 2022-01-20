@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.NavbarItems {
+  background: rgb(29,26,45);
+  background: -moz-radial-gradient(circle, rgba(29,26,45,1) 0%, rgba(54,51,75,1) 49%, rgba(50,48,64,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(29,26,45,1) 0%, rgba(54,51,75,1) 49%, rgba(50,48,64,1) 100%);
+  background: radial-gradient(circle, rgba(29,26,45,1) 0%, rgba(54,51,75,1) 49%, rgba(50,48,64,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1a2d",endColorstr="#323040",GradientType=1);
+  color: #eee;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 3px 10px 6px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 1px 3px 10px 6px rgba(204, 204, 204, 0.75);
+  box-shadow: 1px 3px 10px 6px rgba(204, 204, 204, 0.75);
+  text-decoration: none;
+} 
+
+.product-logo {
+  font-family: 'Amatic SC', cursive;
+  height: 120px;
+  color: #eee;
+  display:flex;
+  justify-self: start;
+  margin: 30px 20px 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fa-dice {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  justify-content: end;
+  margin-right: 2rem;
+  z-index: 50; 
+}
+
+
+.nav-links {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #eee;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background:#eee;
+  color: #1b1161;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #eee;
+}
+
+.nav-links-mobile {
+
+}
+
+.menu-icon {
+  display: none;
+  color: #eee;
+}
+
+@media screen and (max-width: 900px){
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 50;
+    color: #1b1161;
+  }
+
+  .nav-menu.active {
+    background: #e6e5e8;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 50;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: rgba(245, 240, 243, 0.933);
+    border-radius: 0;
+  }
+
+  .product-logo {
+    font-family: 'Amatic SC', cursive;
+    height: 120px;
+    margin: 30px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    display:flex;
+    color: #1b1161;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%)
+  }
+
+  .menu-icon {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+} 

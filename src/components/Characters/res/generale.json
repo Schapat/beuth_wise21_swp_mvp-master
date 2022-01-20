@@ -1,0 +1,136 @@
+{
+    "sections": [
+        {
+            "subheader": "Allgemeine Merkmale",
+            "attributes": [
+				{
+					"origin": {
+						"label": "Herkunft",
+						"inputtype": "text",
+						"placeholder": "Geburtsort und/oder Nation",
+						"length": 100,
+						"value": ""
+					}
+				}
+			]
+        },
+        {
+            "subheader": "äußere Merkmale",
+            "attributes": [
+                {
+                    "picture": {
+                        "label": "Porträt",
+                        "inputtype": "file",
+                        "permittedvalues": [ "gif", "jpg", "jpeg", "png" ],
+                        "placeholder": "Bild des Charakters",
+                        "length": 250,
+                        "value": ""
+                    }
+                },
+                {
+                    "gender": {
+                        "label": "Geschlecht",
+                        "inputtype": "radio",
+                        "valuelist": [
+                            {
+                                "key": "männlich",
+                                "value": 2
+                            },
+                            {
+                                "key": "unbestimmt",
+                                "value": 1,
+                                "default": true
+                            },
+                            {
+                                "key": "weiblich",
+                                "value": 3
+                            },
+                            {
+                                "key": "zwitter",
+                                "value": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "haircolor": {
+                        "label": "Haarfarbe",
+                        "inputtype": "color",
+                        "value": "#FF0000"
+                    }
+                },
+                {
+                    "weight": {
+                        "label": "Gewicht",
+                        "inputtype": "number",
+                        "value": 0
+                    }
+                },
+                {
+                    "age": {
+                        "label": "Alter",
+                        "inputtype": "range",
+                        "min": 1,
+                        "max": 100,
+                        "step": 1
+                    }
+                }
+            ]
+        },
+        {
+            "subheader": "innere Merkmale",
+            "attributes": [
+                {
+                    "motivation": {
+                        "label": "Motivation",
+                        "inputtype": "longtext",
+                        "placeholder": "Was treibt den Charakter an?",
+                        "value": ""
+                    }
+                }
+            ]
+        },
+        {
+            "subheader": "Angaben zu den Familienverhältnissen",
+            "attributes": [
+                {
+                    "maritalstatus": {
+                        "label": "Familienstand",
+                        "inputtype": "combo",
+                        "valuelist": [
+                            {
+                                "key": "ledig",
+                                "value": 1
+                            },
+                            {
+                                "key": "verheiratet",
+                                "value": 2
+                            },
+                            {
+                                "key": "mehrfach verheiratet",
+                                "value": 3
+                            },
+                            {
+                                "key": "geschieden",
+                                "value": 4
+                            },
+                            {
+                                "key": "getrennt lebend",
+                                "value": 5
+                            },
+                            {
+                                "key": "Witwe / Witwer",
+                                "value": 6
+                            }
+                        ],
+                        "defaultvalue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "subheader": "Biografische Angaben",
+            "attributes": []
+        }
+    ]
+}
